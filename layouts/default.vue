@@ -1,13 +1,23 @@
 <template>
   <div>
+    <div class="app-offline--"
+         v-show="$nuxt.isOffline">你已经离线</div>
     <nuxt />
   </div>
 </template>
 
 <style>
+.app-offline-- {
+  font-size: 12px;
+  background: #333;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  z-index: 40;
+}
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

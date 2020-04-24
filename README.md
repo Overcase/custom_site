@@ -1,24 +1,17 @@
 # custom_site
 
-> My well-made Nuxt.js project
+## 网站名:PP 猪
 
-## Build Setup
+## 概述（待更新）
 
-```bash
-# install dependencies
-$ npm install
+## 技术栈
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+### Front-end
 
-# build for production and launch server
-$ npm run build
-$ npm run start
+- Nuxt@2.0.0 + TypeScript
 
-# generate static project
-$ npm run generate
-```
+### Back-end
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## 实现功能
 
 # custom_site

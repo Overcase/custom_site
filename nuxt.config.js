@@ -19,11 +19,18 @@ export default {
   ** Customize the progress-bar color
   */
   loading: { color: '#fff' },
+  /**
+   * Customize router middleware
+   */
+  // router: {
+  //   middleware: 'auth'
+  // },
   /*
   ** Global CSS
   */
   css: [
-    'ant-design-vue/dist/antd.css'
+    'ant-design-vue/dist/antd.css',
+    'assets/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
