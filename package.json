@@ -12,12 +12,17 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
     "@nuxt/typescript-runtime": "^0.4.0",
-    "ant-design-vue": "^1.1.10",
+    "@nuxtjs/apollo": "^4.0.0-rc19",
     "@nuxtjs/axios": "^5.3.6",
+    "@nuxtjs/dotenv": "^1.4.0",
     "@nuxtjs/pwa": "^3.0.0-0",
-    "@nuxtjs/dotenv": "^1.4.0"
+    "ant-design-vue": "^1.1.10",
+    "graphql": "^15.0.0",
+    "node-sass": "^4.14.0",
+    "normalize.css": "^8.0.1",
+    "nuxt": "^2.0.0",
+    "sass-loader": "^8.0.2"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",

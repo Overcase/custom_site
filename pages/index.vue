@@ -1,36 +1,35 @@
+<!--
+ * @Author: your name
+ * @Date: 2020-04-24 13:38:39
+ * @LastEditTime: 2020-04-26 15:31:41
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: /custom_site/pages/index.vue
+ -->
 <template>
   <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        custom_site
-      </h1>
-      <h2 class="subtitle">
-        My well-made Nuxt.js project
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/"
-           target="_blank"
-           class="button--green">
-          Documentation
-        </a>
-        <a href="https://github.com/nuxt/nuxt.js"
-           target="_blank"
-           class="button--grey">
-          GitHub
-        </a>
-      </div>
-    </div>
+    <Header></Header>
+    <FullBackBlock></FullBackBlock>
+    <!-- <ContentContainer>
+      ContentContainer
+    </ContentContainer> -->
+    <Footer></Footer>
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import Logo from "~/components/Logo.vue";
+import Header from "~/components/Header/index.vue";
+import ContentContainer from "~/components/ContentContainer/index.vue";
+import Footer from "~/components/Footer/index.vue";
+import FullBackBlock from "~/components/FullBackBlock/index.vue";
 
 export default Vue.extend({
   components: {
-    Logo
+    Header,
+    FullBackBlock,
+    ContentContainer,
+    Footer
   }
 });
 </script>
@@ -39,10 +38,6 @@ export default Vue.extend({
 .container {
   margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 
 .title {
