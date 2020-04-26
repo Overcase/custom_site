@@ -1,17 +1,15 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-24 13:38:39
- * @LastEditTime: 2020-04-26 19:53:10
+ * @LastEditTime: 2020-04-26 19:55:28
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /custom_site/pages/index.vue
  -->
 <template>
   <div class="container">
-    <Header></Header>
-    <FullBackBlock></FullBackBlock>
+    vuex-test
     <ContentContainer>
-      ContentContainer
       <div @click="toggle">
         toggle
       </div>
@@ -36,6 +34,7 @@ import FullBackBlock from "~/components/FullBackBlock/index.vue";
 import { mapActions } from "vuex";
 
 export default Vue.extend({
+  name: "vuexTest",
   components: {
     Header,
     FullBackBlock,
