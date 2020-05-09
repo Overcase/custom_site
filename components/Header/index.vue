@@ -1,13 +1,14 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-24 23:16:36
- * @LastEditTime: 2020-04-26 14:29:27
+ * @LastEditTime: 2020-05-09 16:05:33
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /custom_site/components/Header/index.vue
  -->
 <template>
   <section class="g-header">
+    <div class="taper-line"></div>
     <div class="nav-link">
       <ul>
         <li v-for="link in linkList"
@@ -81,6 +82,16 @@ export default Vue.extend({
   display: flex;
   box-sizing: border-box;
   padding: 15px 5px;
+  z-index: 2;
+  .taper-line {
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), transparent);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
   .nav-link {
     width: 30%;
     ul {

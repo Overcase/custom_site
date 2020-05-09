@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-04-24 13:38:39
- * @LastEditTime: 2020-04-26 19:53:10
+ * @LastEditTime: 2020-05-09 15:26:06
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: /custom_site/pages/index.vue
@@ -11,17 +11,9 @@
     <Header></Header>
     <FullBackBlock></FullBackBlock>
     <ContentContainer>
-      ContentContainer
-      <div @click="toggle">
-        toggle
-      </div>
-      <div @click="login">
-        login
-      </div>
-      <div @click="logout">
-        logout
-      </div>
-      loginStatus: {{loginStatus}}
+      <SliderLeft></SliderLeft>
+      <ArticleContent></ArticleContent>
+      <SliderRight></SliderRight>
     </ContentContainer>
     <Footer></Footer>
   </div>
@@ -29,10 +21,16 @@
 
 <script lang="ts">
 import Vue from "vue";
-import Header from "~/components/Header/index.vue";
-import ContentContainer from "~/components/ContentContainer/index.vue";
-import Footer from "~/components/Footer/index.vue";
-import FullBackBlock from "~/components/FullBackBlock/index.vue";
+import {
+  Header,
+  ContentContainer,
+  Footer,
+  FullBackBlock,
+  SliderLeft,
+  SliderRight,
+  ArticleContent
+} from "~/components";
+
 import { mapActions } from "vuex";
 
 export default Vue.extend({
@@ -40,7 +38,10 @@ export default Vue.extend({
     Header,
     FullBackBlock,
     ContentContainer,
-    Footer
+    Footer,
+    SliderLeft,
+    SliderRight,
+    ArticleContent
   },
   data() {
     return {};
